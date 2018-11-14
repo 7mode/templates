@@ -33,22 +33,22 @@ definitions:
      source: 
      relationship_type: comprised
      target: 
-     template_id : 
+     template_id: 
   - relationship: # add relationship prometheus alarm on host
      source: 
      relationship_type: 
      target: 
-     template_id : 
+     template_id: 
   - relationship: # add relationship prometheus alarm on pod (on k8s cluster)
      source: 
      relationship_type: 
      target: 
-     template_id : 
+     template_id: 
   - relationship: # add relationship vitrage alarms on k8s cluster
      source: 
      relationship_type: 
      target: 
-     template_id : 
+     template_id: 
 
 scenarios:
  - scenario: # add scenario to raise vitrage alarm and set state to SUBOPTIMAL on k8s cluster
@@ -68,7 +68,7 @@ scenarios:
         properties:
          alarm_name: 
          severity: warning
- - scenario: # add scenario to add 2 causual relationships 
+ - scenario: # add scenario to add 2 causal relationships 
              # 1. between host prometheus alarm and k8s vitrage alarm
              # 2. between k8s vitrage alarm and pod prometheus alarm
     condition: 
